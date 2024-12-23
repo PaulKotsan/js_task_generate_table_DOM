@@ -370,7 +370,7 @@ for (const person of people) {
   const cellCentury = document.createElement('td');
 
   cellName.innerText = person.name;
-  cellGender.innerText = person.sex;
+  cellGender.innerText = person.sex === 'm' ? 'male' : 'female';
   cellBorn.innerText = person.born;
   cellDied.innerText = person.died;
   cellAge.innerText = person.died - person.born;
